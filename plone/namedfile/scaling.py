@@ -291,8 +291,8 @@ class ImageScaling(BrowserView):
         except (ConflictError, KeyboardInterrupt):
             raise
         except Exception:
-            exception('could not scale "%r" of %r',
-                      orig_value, self.context.absolute_url())
+            # exception('could not scale "%r" of %r',
+            #           orig_value, self.context.absolute_url())
             return
         if result is not None:
             data, format_, dimensions = result
